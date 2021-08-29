@@ -43,10 +43,22 @@ input:focus, textarea:focus, select:focus {
   margin-bottom: 3rem;
 }
 
+@media (min-width: 768px) {
+  .container .logo {
+    width: 100px;
+  }
+}
+
 .container .header h2 {
   text-align: center;
   font-weight: 300;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container .header h2 {
+    font-size: 2.5rem;
+  }
 }
 
 .container .header b, .container .header p {
@@ -57,6 +69,12 @@ input:focus, textarea:focus, select:focus {
   text-align: center;
   font-size: 16px;
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container .header p {
+    font-size: 20px;
+  }
 }
 
 .container form {
@@ -71,6 +89,7 @@ input:focus, textarea:focus, select:focus {
   .container form {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -144,11 +163,12 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 6px 8px 10px rgba(170, 170, 170, 0.5);
 }
 
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 768px) {
   .container form button {
     width: 30%;
     margin-left: 1rem;
     margin-top: 0;
+    font-size: 16px;
   }
 }
 

@@ -37,12 +37,18 @@ input:focus, textarea:focus, select:focus{
     .logo{
         width:70px;
         margin-bottom: 3rem;
+        @media (min-width:768px){
+            width:100px;
+        }
     }
     .header{
         h2{
             text-align: center;
             font-weight: 300;
             margin-bottom: 1rem;
+            @media (min-width:768px){
+                font-size: 2.5rem;
+            }
         }
         b,p{
             color:$text-color2;
@@ -51,6 +57,9 @@ input:focus, textarea:focus, select:focus{
             text-align: center;
             font-size: 16px;
             margin-bottom: 1.5rem;
+            @media (min-width:768px){
+                font-size: 20px;
+            }
         }
     }
     form{ 
@@ -62,6 +71,7 @@ input:focus, textarea:focus, select:focus{
         @media (min-width:768px){
             flex-direction: row;
             justify-content: space-between;
+            margin-bottom: 1.5rem;
         }
         .form-control{
             position:relative;
@@ -121,13 +131,12 @@ input:focus, textarea:focus, select:focus{
             font-size: 14px;
             box-shadow: 6px 8px 10px rgba(170, 170, 170,0.5);
             @media (min-width:768px){
-                @media (min-width:768px){
-                    width:30%;
-                    margin-left: 1rem;
-                    margin-top: 0;
+                width:30%;
+                margin-left: 1rem;
+                margin-top: 0;
+                font-size: 16px;
                 }
             }
-        }
     }
     img{
         width:80%;
