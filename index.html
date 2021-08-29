@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/style.css">
     <title>Frontend Mentor | Ping coming soon page</title>
 </head>
@@ -18,23 +19,29 @@
                 <h2>We are launching <b>soon!</b></h2>
                 <p>Subscribe and get notified</p>
             </div>
-            <form>
-                <input type="text" id="email" placeholder="Your email address...">
-                <button type="submit">Notify Me</button>
+            <form class="form" id="form">
+                <div class="form-control">
+                    <input type="text" id="email" placeholder="Your email address...">
+                    <small>Please provide a valid email address</small>
+                </div>
+                <button>Notify Me</button>
+
             </form>
             <img src="images/illustration-dashboard.png" alt="">
         </div>
         <footer>
             <div class="social">
-                <img src="images/facebook.svg" alt="">
-                <img src="images/twitter.svg" alt="">
-                <img src="images/instagram.svg" alt="">
+                <a href="" class="social-link"><i class='bx bxl-facebook'></i></a>
+                <a href="" class="social-link"><i class='bx bxl-twitter'></i></i></a>
+                <a href="" class="social-link"><i class='bx bxl-instagram'></i></a>
             </div>
-            <p>
+            <small>
                 &copy; Copyright Ping. All rights reserved.
-            </p>
+            </small>
         </footer>
     </div>
+
+    <script src="javascript/main.js"></script>
 </body>
 
 </html>
