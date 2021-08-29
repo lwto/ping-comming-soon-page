@@ -101,7 +101,7 @@ input:focus, textarea:focus, select:focus {
 .container form .form-control small {
   position: absolute;
   top: 46px;
-  left: 0;
+  left: 0px;
   color: #ff5263;
   width: 100%;
   text-align: center;
@@ -109,9 +109,22 @@ input:focus, textarea:focus, select:focus {
   visibility: hidden;
 }
 
+@media (min-width: 768px) {
+  .container form .form-control small {
+    text-align: left;
+    left: 30px;
+  }
+}
+
 .container form .form-control.error input {
   border-color: #ff5263;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container form .form-control.error input {
+    margin-bottom: 0;
+  }
 }
 
 .container form .form-control.error small {
@@ -147,6 +160,7 @@ input:focus, textarea:focus, select:focus {
 
 footer {
   margin-bottom: 1rem;
+  font-size: 14px;
 }
 
 footer .social {

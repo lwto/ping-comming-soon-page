@@ -84,18 +84,25 @@ input:focus, textarea:focus, select:focus{
             small{
                 position:absolute;
                 top:46px;
-                left:0;
+                left:0px;
                 color:$error;
                 width:100%;
                 text-align: center;
                 padding-top:4px;
                 visibility: hidden;
+                @media (min-width:768px){
+                    text-align: left;
+                    left:30px;
+                }
             }
         }
         .form-control.error {
             input{
                 border-color: $error;
                 margin-bottom: 1rem;
+                @media (min-width:768px){
+                    margin-bottom: 0;
+                }
             }
             small{
                 visibility: visible;
@@ -130,6 +137,7 @@ input:focus, textarea:focus, select:focus{
 }
 footer{
     margin-bottom: 1rem;
+    font-size: 14px;
     .social{
         display:flex;
         justify-content: center;
